@@ -13,6 +13,26 @@ int main() {
 	cin >> f;
 	c = FtoC(f);
 	cout << "\nThe temperature in celsius is ---> " << c << endl;
+	if (f > 90)
+	{
+		cout << "It is too hot!!!" << endl;
+	}
+	else if (f > 80)
+	{
+		cout << "It is hot!!!" << endl;
+	}
+	else if (f > 65)
+	{
+		cout << "It is cool!!!" << endl;
+	}
+	else if (f > 45)
+	{
+		cout << "It is chill!!!" << endl;
+	}
+	else
+	{
+		cout << "It is frozen" << endl;
+	}
 
 }
 
@@ -27,3 +47,4 @@ void PrintTitle()
 	cout << "Temperature Conversion App\n";
 	cout << "============================";
 }
+
