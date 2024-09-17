@@ -1,13 +1,18 @@
 #pragma once
 class Triangle
 {
-public :
+private:
 	double height;
 	double base;
+	double area;
+public:
+	
 	Triangle(double, double);
+	Triangle();
 	void CalcArea();
 	double getArea();
-private:
-	double area;
+	void setHeight(double);
+	void setBase(double);
+	void setValues(double, double);
 };
 
